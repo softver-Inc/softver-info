@@ -1,0 +1,79 @@
+:root {
+  --blue: #15447c;
+  --gray: #484e50;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+body::after {
+  content: "";
+  background: url(./images/softver.svg) no-repeat center center;
+  background-size: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.05;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 20%;
+}
+
+main {
+  display: flex;
+  height: 80%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#company-name #soft {
+  color: var(--gray);
+}
+
+#company-name #ver {
+  color: var(--blue);
+}
+
+#logo {
+  width: 50px;
+}
+
+#link-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--blue);
+  border: 2px solid var(--gray);
+  border-radius: 10px;
+  padding: 10px;
+  width: 60%;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.label {
+  width: 80px;
+}
+
+.link img {
+  width: 34px;
+}
